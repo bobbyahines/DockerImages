@@ -1,0 +1,14 @@
+# Install and configure Supervisord
+RUN apt-get update && apt-get install -y supervisor
+COPY workers.conf /etc/supervisor/conf.d/workers.conf
+
+# workers.conf:
+#[program:workers]
+#process_name=%(program_name)s_%(process_num)02d
+#command=php artisan queue:work --tries=2 --memory=512
+#autostart=true
+#autorestart=true
+#user=root
+#numprocs=3
+#redirect_stderr=true
+#stdout_logfile=/var/www/html/storage/logs/worker.log
