@@ -1,6 +1,6 @@
 # Add node.js PPA repo, get setup script, and install
 WORKDIR /
 RUN apt-get install -y gnupg
-RUN curl -sL https://deb.nodesource.com/setup_10.x -o nodesource_setup.sh
+RUN curl -sL https://deb.nodesource.com/setup_12.x -o nodesource_setup.sh
 RUN bash nodesource_setup.sh
 RUN apt-get install -y nodejs build-essential
