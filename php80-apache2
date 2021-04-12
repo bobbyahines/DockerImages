@@ -3,7 +3,7 @@ LABEL maintainer="Bobby Hines <bobbyahines@gmail.com>"
 LABEL image='bobbyahines/php80Apache:latest'
 
 # Set root directory for apache2 web server
-ENV APACHE_DOCUMENT_ROOT /var/www/htmlpublic
+ENV APACHE_DOCUMENT_ROOT /var/www/html/public
 ENV APACHE_LOG_DIR /var/www/log
 
 # Update repos and install system/security updates
