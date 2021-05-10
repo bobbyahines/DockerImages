@@ -29,6 +29,9 @@ RUN apt-get install -y apt-utils \
 #    && docker-php-ext-install -j$(nproc) gd \
 #    && docker-php-ext-install -j$(nproc) mysqli
 #
+#Install Mysqli Library
+#RUN docker-php-ext-install -j$(nproc) mysqli
+#
 # Install/Enable PDO mysql driver
 #RUN docker-php-ext-install -j$(nproc) pdo_mysql \
 #    && docker-php-ext-configure pdo_mysql
