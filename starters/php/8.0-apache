@@ -7,7 +7,7 @@ ENV APACHE_DOCUMENT_ROOT /var/www/html/public
 ENV APACHE_LOG_DIR /var/www/log
 
 # Update repos and install system/security updates
-RUN apt-get update && apt-get dist-upgrade -y
+RUN apt-get update && apt-get upgrade -y
 
 #############################################################
 ## SELECTED UTILITIES  ######################################
