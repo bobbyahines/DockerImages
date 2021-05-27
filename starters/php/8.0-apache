@@ -19,7 +19,10 @@ RUN apt-get install -y apt-utils \
     curl \
     nano \
     wget
-    
+
+# Install composer and put binary into $PATH
+RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
+
 #############################################################
 ## PHP EXTENSIONS / LIBRARIES  ##############################
 #############################################################
