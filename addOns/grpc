@@ -1,0 +1,3 @@
+# Install/Enable PHP gRPC extension
+RUN pecl install grpc \
+    && docker-php-ext-enable grpc
