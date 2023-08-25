@@ -65,6 +65,10 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     && docker-php-ext-install zip \
     && rm -rf /var/lib/apt/lists/*
 
+# Install/Enable PHP gRPC extension
+#RUN pecl install grpc \
+#    && docker-php-ext-enable grpc
+
 # Establish directory for apache log files
 RUN mkdir -p ${APACHE_LOG_DIR}
 
